@@ -1,1 +1,6 @@
-<h1>This is a footer</h1>
+<div class="footer">
+    <?php 
+        $year = date("Y");
+        echo "Pokyo &copy;".$year;
+    ?>
+</div>

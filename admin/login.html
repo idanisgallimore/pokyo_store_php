@@ -7,6 +7,17 @@
     <title>Pokyo Shoes - Administration Login</title>
 </head>
 <body>
-    <h1>login</h1>
+    <h1 class="page-title">Login</h1>
+    <div class="form-container">
+        <p class="validation-txt">Please fill out all fields</p>
+        <form class="form-c" action="validate.php" method="post">
+            <input class="form-input userid" type="text" name="userid" placeholder="Enter User name" onfocusout="formValid()">
+            <input class="form-input password" type="password" name="password" placeholder="Enter Password">
+            <input class="btn sub-btn" type="submit" value="Login">
+        </form>
+    </div>
+    <!-- script -->
+    <script src="../assets/script.js"></script>
+
 </body>
 </html>

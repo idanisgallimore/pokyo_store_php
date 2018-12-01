@@ -40,6 +40,8 @@
 
 
 
-    <?php include("footer.inc.php");?>
+    <!-- JS script -->
+    <script src="../assets/script.js"></script>
+
 </body>
 </html>
