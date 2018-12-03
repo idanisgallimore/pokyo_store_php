@@ -1,0 +1,18 @@
+<h1 class="page-title">Delete product category</h1>
+<?php  
+    echo "<div class=\"form-container\">
+        <form class=\"form-c\" action=\"admin.php\" method=\"post\">
+        <select  class=\"form-op\" name=\"cat\">";
+        $query = "SELECT name, catid from categories";
+        $result = mysql_query($query);
+        while($row = mysql_fetch_array($result, MYSQL_ASSOC)){
+            $catid = $row['catid'];
+            $name = $row['name'];
+            echo "<option value=\"$catid\">$name</option>";
+        }
+
+    echo" </select>
+           <input type=\"hidden\" name=\"content\" value=\"deletecategory\">
+            <input class=\"btn sub-btn sub-btn-long\" type=\"submit\" value=\"Delete category\">
+        </form>
+    </div>";

@@ -1,6 +1,6 @@
 <div class="products-container">
     <?php 
-        $links = array("Add Product"=>"addproduct", "Add Category"=>"addcategory", "Browse Products"=>"browseproducts", "Out of Stock"=>"outofstock");
+        $links = array("Add Product"=>"addproduct", "Add Category"=>"addcategory", "Browse Products"=>"browseproducts", "Out of Stock"=>"outofstock",);
         $length = count($links);
         
         foreach($links as $key => $value){
