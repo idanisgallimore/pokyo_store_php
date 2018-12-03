@@ -1,0 +1,4 @@
+    $catid =mysql_real_escape_string($catid);
+    $name =mysql_real_escape_string($name);
+    $quantity =mysql_real_escape_string($quantity);
+    $price =mysql_real_escape_string($price);

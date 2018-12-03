@@ -209,6 +209,12 @@
 .msg-date{
     font-size: 12px;
 }
+.l-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 .page-link{
     padding-top: 20px;
     padding-bottom: 5px;
@@ -216,7 +222,6 @@
     color: #212F3C;
     font-size: 20px;
     border-bottom: 1px solid #212F3C;
-    text-align: center;
 }
 .msg-link{
     margin-top: 50px;
@@ -225,4 +230,34 @@
     color: #5D6D7E;
     border-bottom: 1px solid #5D6D7E;
 
+}
+/* Upload button stuff */
+.uploadbtn-wrapper{
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    cursor: pointer;
+
+}
+.upload-btn{
+    border: solid 2px black;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+.upload-btn:hover{
+    background-color: black;
+    color: white;
+}
+.form-upload{
+    font-size: 100px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+}
+.form-op{
+    border: 1px solid black;
+    margin-bottom: 20px;
+    font-size: 20px;
+    height: 30px;
 }

@@ -11,7 +11,9 @@
 
     if($result){
         echo 
-        "<h3 class=\"page-title\">Message added</h3>
-        <a class=\"page-link\" href='admin.php'>Home</a>";
+        "<div class=\"l-container\">
+            <h3 class=\"page-title\">Message added</h3>
+            <a class=\"page-link\" href='admin.php'>Home</a>
+        </div>";
     }
 ?>
