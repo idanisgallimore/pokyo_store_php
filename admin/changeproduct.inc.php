@@ -33,9 +33,31 @@
         $pic = $_FILES['picture']['name'];
         if($pic){
             $thumbnail = getThumb($_FILES['picture']);
-            // 12/5 we stopped here
-
+            $thumbnail = mysql_real_escape_string($thumbnail);
+            $query = "UPDATE products 
+            SET catid = '$catid', description ='$name', picture='$thumbnail', price='$price', quantity='$quantity'
+            WHERE prodid = $prodid";
+        }else{
+            $query = "UPDATE products 
+            SET catid = '$catid', description ='$name', price='$price', quantity='$quantity'
+             WHERE prodid = $prodid";
         }
+
+        $result = mysql_query($query);
+        if($result){
+            echo "<div class=\"l-container\">
+                <h3 class=\"page-title\">Product updated</h3>
+                <a class=\"page-link\" href='admin.php'>Home</a>
+            </div>";
+        }else{
+            echo mysql_error();
+            echo "<div class=\"l-container\">
+                <h3 class=\"page-title\">Product not updated. There was an error</h3>
+                <a class=\"page-link\" href='admin.php?content=product&id=$prodid'>Home</a>
+            </div>";
+        }
+        
+
     }
 
 ?>

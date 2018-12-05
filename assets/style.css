@@ -193,6 +193,15 @@
 .btn-danger:hover{
     background-color: orangered;
 }
+.sub-btn-small{
+    font-size: 12px;
+    width: 40%;
+}
+.btns-container-small{
+    width: 100%;
+    margin-top: 10px;
+    justify-content: center;
+}
 .validation-txt{
     display: none;
     padding: 10px;

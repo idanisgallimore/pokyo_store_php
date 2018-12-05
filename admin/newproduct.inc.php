@@ -19,7 +19,7 @@ $quantity =mysql_real_escape_string($quantity);
 $price =mysql_real_escape_string($price);
 
 // call function that formats the thumbnail
-$thumbnail = getThumb($_FILES['picture']);
+$thumbnail = getThumb($_FILES['picture']) or die ( "Picture not uploaded");
 $thumbnail =mysql_real_escape_string($thumbnail);
 
 $query = "INSERT into products(catid, description,picture, price, quantity) VALUES('$catid','$name','$thumbnail','$price', '$quantity')";
